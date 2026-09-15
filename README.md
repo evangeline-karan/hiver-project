@@ -56,12 +56,13 @@ python scripts/08_eval_harness.py judge-agreement --scored data/eval_results_hum
 
 | System | Intent accuracy | Intent macro F1 | Escalation F1 |
 |---|---|---|---|
-| Main system | 0.761 | 0.778 | 0.819 |
-| Trivial baseline | 0.244 | — | 0.000 |
-| Simple baseline (TF-IDF+LogReg) | 0.372 | 0.242 | — |
+| Main system | 0.700 | 0.714 | 0.836 |
+| Trivial baseline | 0.250 | — | 0.000 |
+| Simple baseline (TF-IDF+LogReg) | 0.400 | 0.195 | — |
 
-Reply quality (LLM judge, 1-5): mean 4.48 — **see REPORT.md Section 4 for why this
-number is misleading on its own.**
+Reply quality (LLM judge, 1-5, n=80): mean 4.45 — **see REPORT.md Section 4 for why this
+number is misleading on its own.** Evaluated on an 80-example genuinely hand-reviewed
+subset of the golden set — see REPORT.md Section 6 for why not the full 180.
 
 ## Repo structure
 ```
